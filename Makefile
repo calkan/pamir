@@ -5,8 +5,8 @@ SOURCES=partition.cc pamir.cc assembler.cc genome.cc aligner.cc extractor.cc com
 LDFLAGS=-lm -lz
 OBJECTS=$(SOURCES:.cc=.o) 
 EXECUTABLE=pamir
-all: snp rc es sm mf cm
-basic: snp rc es mf cm
+all: snp rc es sm cm
+basic: snp rc es cm
 
 rc: 
 	g++ -O3 -o recalibrate recalibrate.cc
